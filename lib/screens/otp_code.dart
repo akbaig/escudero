@@ -187,7 +187,7 @@ class _DigitFormFieldState extends State<DigitFormField> {
           onChanged: (String val) {
             if(val.length == 1)
             {
-              if(widget.text != "4")
+              if(widget.text != "6")
                 widget.focusNode.nextFocus();
               else
                 widget.focusNode.unfocus();
