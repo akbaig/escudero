@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'screens/intro1.dart';
 import 'screens/intro2.dart';
 import 'screens/register.dart';
+import 'screens/otp_code.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      home: Register(),
+      home: OTP(),
       debugShowCheckedModeBanner: false,
     );
   }
