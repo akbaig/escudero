@@ -49,14 +49,14 @@ class _OTPState extends State<OTP> {
 
 
 class DigitFormField extends StatefulWidget {
-  int flex; 
-  String text;
+  final int flex; 
+  final String text;
   DigitFormField({this.text, this.flex = 1});
   @override
-  _CodeFieldState createState() => _CodeFieldState();
+  _DigitFormFieldState createState() => _DigitFormFieldState();
 }
 
-class _CodeFieldState extends State<DigitFormField> {
+class _DigitFormFieldState extends State<DigitFormField> {
   @override
   Widget build(BuildContext context) {
     return Expanded(
