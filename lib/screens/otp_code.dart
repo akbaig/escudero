@@ -65,6 +65,12 @@ class _DigitFormFieldState extends State<DigitFormField> {
   }
 
   @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
 
     return Expanded(
@@ -72,6 +78,7 @@ class _DigitFormFieldState extends State<DigitFormField> {
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: TextFormField(
+          textAlign: TextAlign.center,
           controller: controller,
           keyboardType: TextInputType.number,
           maxLength: 1,
